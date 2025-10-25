@@ -20,8 +20,8 @@ const Login = () => {
 
     try {
       const url = isRegister
-        ? "http://localhost:5000/api/admin/register"
-        : "http://localhost:5000/api/admin/login";
+        ? https://neogreen-backend.onrender.com/api/admin/register"
+        : "https://neogreen-backend.onrender.com/api/admin/login";
 
       const res = await axios.post(url, { username, password });
 
