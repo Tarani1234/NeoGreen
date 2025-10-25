@@ -33,7 +33,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchBanner = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/banners");
+        const response = await axios.get("https://neogreen-backend.onrender.com/api/banners");
         if (response.data.length > 0) {
           const banner = response.data[0];
           setContent({ title: banner.title, description: banner.description });
@@ -67,7 +67,7 @@ export default function Dashboard() {
 
     } else {
       // Add new banner
-      const response = await axios.post("http://localhost:5000/api/banners", {
+      const response = await axios.post("https://neogreen-backend.onrender.com/api/banners", {
         title: content.title,
         description: content.description,
       });
@@ -84,7 +84,7 @@ export default function Dashboard() {
   const handleDelete = async () => {
     if (!contentId) return;
     try {
-      await axios.delete(`http://localhost:5000/api/banners/${contentId}`);
+      await axios.delete(`https://neogreen-backend.onrender.com/api/banners/${contentId}`);
       setContent({ title: "", description: "" });
       setContentId("");
       alert("Banner deleted successfully");
@@ -96,7 +96,7 @@ export default function Dashboard() {
   const handleLogout = async () => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/admin/logout",
+      "https://neogreen-backend.onrender.com/api/admin/logout",
     );
     console.log("Logout response:", response); 
 
