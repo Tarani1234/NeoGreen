@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const BanCardsSection = () => {
   const cards = [
@@ -29,7 +30,7 @@ const BanCardsSection = () => {
               key={index}
               className="flex flex-col md:flex-row items-center text-center md:text-left gap-2"
             >
-              <img src={card.img} alt={card.title} className="mb-2 w-15 h-15" />
+              <Image src={card.img} alt={card.title} width={15} height={15} className="mb-2" />
               <h5 className="text-lg font-medium ml-4">{card.title}</h5>
               {/* Render dot only if not the last item */}
               {index !== cards.length - 1 && (
