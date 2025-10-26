@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import BanCardsSection from "./Components/BanCardSection";
