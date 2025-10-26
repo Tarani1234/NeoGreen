@@ -56,7 +56,8 @@ const NutrientsSection = () => {
     <section className="nutrients_section flex items-center justify-center">
       <div className="container">
         <div className="nutrients_wrap">
-          <h2 >One Scoop. 60+ Nutrients. It's That Easy.</h2>
+          <h2>One Scoop. 60+ Nutrients. It&apos;s That Easy.</h2>
+
           <p className="text-xl ">
             NeoGreens is built to take the confusion out of wellness. You get
             the essentials – no synthetic ingredients, harsh formulas, or
